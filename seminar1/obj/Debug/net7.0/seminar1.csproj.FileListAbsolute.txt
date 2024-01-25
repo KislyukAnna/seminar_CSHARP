@@ -1,0 +1,14 @@
+C:\Users\Anna\Desktop\GeekBrains\PRACTICE\seminar_CSHARP\seminar1\bin\Debug\net7.0\seminar1.exe
+C:\Users\Anna\Desktop\GeekBrains\PRACTICE\seminar_CSHARP\seminar1\bin\Debug\net7.0\seminar1.deps.json
+C:\Users\Anna\Desktop\GeekBrains\PRACTICE\seminar_CSHARP\seminar1\bin\Debug\net7.0\seminar1.runtimeconfig.json
+C:\Users\Anna\Desktop\GeekBrains\PRACTICE\seminar_CSHARP\seminar1\bin\Debug\net7.0\seminar1.dll
+C:\Users\Anna\Desktop\GeekBrains\PRACTICE\seminar_CSHARP\seminar1\bin\Debug\net7.0\seminar1.pdb
+C:\Users\Anna\Desktop\GeekBrains\PRACTICE\seminar_CSHARP\seminar1\obj\Debug\net7.0\seminar1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Anna\Desktop\GeekBrains\PRACTICE\seminar_CSHARP\seminar1\obj\Debug\net7.0\seminar1.AssemblyInfoInputs.cache
+C:\Users\Anna\Desktop\GeekBrains\PRACTICE\seminar_CSHARP\seminar1\obj\Debug\net7.0\seminar1.AssemblyInfo.cs
+C:\Users\Anna\Desktop\GeekBrains\PRACTICE\seminar_CSHARP\seminar1\obj\Debug\net7.0\seminar1.csproj.CoreCompileInputs.cache
+C:\Users\Anna\Desktop\GeekBrains\PRACTICE\seminar_CSHARP\seminar1\obj\Debug\net7.0\seminar1.dll
+C:\Users\Anna\Desktop\GeekBrains\PRACTICE\seminar_CSHARP\seminar1\obj\Debug\net7.0\refint\seminar1.dll
+C:\Users\Anna\Desktop\GeekBrains\PRACTICE\seminar_CSHARP\seminar1\obj\Debug\net7.0\seminar1.pdb
+C:\Users\Anna\Desktop\GeekBrains\PRACTICE\seminar_CSHARP\seminar1\obj\Debug\net7.0\seminar1.genruntimeconfig.cache
+C:\Users\Anna\Desktop\GeekBrains\PRACTICE\seminar_CSHARP\seminar1\obj\Debug\net7.0\ref\seminar1.dll
