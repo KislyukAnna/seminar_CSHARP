@@ -26,7 +26,7 @@ else if (x < 0 & y < 0)
 {
     System.Console.WriteLine("3");
 }
-else if (x > 0 & y < 0)
+else 
 {
     System.Console.WriteLine("4");
 }
