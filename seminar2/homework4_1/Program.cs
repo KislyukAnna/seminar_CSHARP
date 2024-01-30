@@ -8,15 +8,15 @@ if (N < 10)
     Console.WriteLine(N);
 }
 else
-{   
-    string str_N = (N%10).ToString();
+{
+    string str_N = (N % 10).ToString();
 
-    N /=10;
+    N /= 10;
 
     while (N > 0)
     {
         int number = N % 10;
-        
+
         str_N = number.ToString() + "," + str_N;
 
         N /= 10;
