@@ -20,3 +20,7 @@ for (int i = 0; i < result.Length; i++)
 {
     System.Console.Write(result[i]+" ");
 }
+if (array.Length % 2 == 1)
+{
+    Console.WriteLine($"(элемент {array[array.Length / 2]} не имеет пары)");
+}
