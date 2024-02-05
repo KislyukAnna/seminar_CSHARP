@@ -11,6 +11,6 @@ int[] array = {6,9,-5,3,-6,1,8,2,3,-4};
 
 for (int i = 0; i < array.Length; i++)
 {
-    array[i] = array[i]*(-1);
+    array[i] = -array[i];
     Console.Write(array[i] + " ");
 }

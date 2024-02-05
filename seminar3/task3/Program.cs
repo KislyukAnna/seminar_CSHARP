@@ -24,3 +24,10 @@ if (array.Length % 2 == 1)
 {
     Console.WriteLine($"(элемент {array[array.Length / 2]} не имеет пары)");
 }
+
+// int[] array = { 1, 3, 2, 123, 4, 2, 3 };
+
+// for (int i = 0; i < array.Length / 2 + 1; i++)
+// {
+//     Console.WriteLine($"{array[i]} {array[^(i + 1)]}");
+// }
