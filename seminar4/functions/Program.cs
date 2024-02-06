@@ -53,6 +53,19 @@ void PrintArray(int[] array)
     Console.WriteLine("]");
 }
 
+//функция "зеркало" массива
+int[] MirroringArray(int[] array)
+{
+    int temp;
+    for (int i = 0; i < array.Length / 2; i++)
+    {
+        temp = array[i];
+        array[i] = array[array.Length - 1 - i];
+        array[array.Length - 1 - i] = temp;
+    }
+    return array;
+}
+
 //Определение введено ли число с консоли
 bool IsNum(int input) 
 {
@@ -67,7 +80,7 @@ int CountPrimeNumbers(int[] array)
     int count = 0;
     foreach (var elem in array)
     {
-        if (функция определения элементов, отвечающих каким то требваниям(elem))
+        if (elem) //(элемент,отвечающий каким то требваниям)
         {
             count++;
         }
@@ -96,15 +109,6 @@ bool IsPrime(int number)
             return false;
     }
     return true;
-}
-
-//функция определения четности числа
-bool IsEven(int number) 
-{
-    if (number % 2 == 0)
-    {
-        return true;
-    } 
 }
 
 //Сумма цифр числа 
