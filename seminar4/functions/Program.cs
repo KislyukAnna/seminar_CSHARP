@@ -54,7 +54,7 @@ void PrintArray(int[] array)
 }
 
 //функция "зеркало" массива
-int[] MirroringArray(int[] array)
+int[] ReverseArray(int[] array)
 {
     int temp;
     for (int i = 0; i < array.Length / 2; i++)
