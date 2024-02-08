@@ -125,3 +125,51 @@ int SumOfDigits(int number)
     }
     return sum;
 }
+
+// Функция создания двумерного массива с рандомными значениями
+int[,] CreateMatrix(int rowCount, int columsCount)
+{
+    int[,] matrix = new int[rowCount, columsCount];
+
+    Random rnd = new Random();
+    // создадим массив рандомно
+    for (int i = 0; i < matrix.GetLength(0); i++)
+    {
+        for (int j = 0; j < matrix.GetLength(1); j++)
+        {
+            matrix[i, j] = rnd.Next(1, 11);
+        }
+    }       
+    return matrix;
+}
+
+// функция вывода двумерного массива
+void ShowMatrix(int[,] matrix)
+{
+    for (int i = 0; i < matrix.GetLength(0); i++)
+    {
+        for (int j = 0; j < matrix.GetLength(1); j++)
+        {
+            System.Console.Write($"{matrix[i, j]} ");   //интерполяция строк
+        }
+        
+        System.Console.WriteLine();
+    }
+}
+
+
+
+
+// функция выделения из строки буквенных символов
+string GetLettersFromString(string s)
+{
+    string letters = "";
+    foreach (char e in s)
+    {
+        if(char.IsAsciiLetter(e) == true)
+        {
+            letters = letters + e;
+        }
+    }
+    return letters;
+}
