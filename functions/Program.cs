@@ -52,6 +52,10 @@ void PrintArray(int[] array)
     }
     Console.WriteLine("]");
 }
+ // вывод массива строкой
+ Console.WriteLine("["+string.Join(", ",array)+"]");
+ Console.WriteLine("['"+string.Join("', '",char_array)+"']");
+
 
 //функция "зеркало" массива
 int[] ReverseArray(int[] array)
