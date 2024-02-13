@@ -51,7 +51,7 @@ void PrintArray(int[] array) // элементы через запятую
     for (int i = 0; i < array.Length; i++)
     {
         Console.Write(array[i]);
-        if (i<array.Length-1)
+        if (i < array.Length - 1)
         {
             System.Console.WriteLine(", ");
         }
@@ -65,7 +65,7 @@ void PrintArray(int[] array) // в квадратных скобках, элем
     for (int i = 0; i < array.Length; i++)
     {
         Console.Write(array[i]);
-        if (i<array.Length-1)
+        if (i < array.Length - 1)
         {
             System.Console.WriteLine(", ");
         }
@@ -73,11 +73,11 @@ void PrintArray(int[] array) // в квадратных скобках, элем
     Console.WriteLine("]");
 }
 
- // вывод массива строкой
- Console.WriteLine("["+string.Join(", ",array)+"]");
- Console.WriteLine("['"+string.Join("', '",char_array)+"']");
+// вывод массива строкой
+Console.WriteLine("[" + string.Join(", ", array) + "]");
+Console.WriteLine("['" + string.Join("', '", char_array) + "']");
 
- 
+
 
 //функция "зеркало" массива
 int[] ReverseArray(int[] array)
@@ -93,12 +93,12 @@ int[] ReverseArray(int[] array)
 }
 
 //Определение введено ли число с консоли
-bool IsNum(int input) 
+bool IsNum(int input)
 {
     int output;
     bool result = int.TryParse(input, out output);
     return result;
-} 
+}
 
 // функция подсчета элементов массива, отвечающих каким то требваниям
 int CountPrimeNumbers(int[] array)
@@ -120,14 +120,14 @@ int GetNumberFromArray(int[] array)
     int result = 0;
     for (int i = 0; i < array.Length; i++)
     {
-        int temp = array[i] * (int)Math.Pow(10, array.Length - i -1);
+        int temp = array[i] * (int)Math.Pow(10, array.Length - i - 1);
         result += temp;
     }
     return result;
 }
 
 //функция определения простых чисел в массиве от 1 до числа number
-bool IsPrime(int number) 
+bool IsPrime(int number)
 {
     for (int i = 2; i < number; i++)
     {
@@ -165,7 +165,7 @@ int[,] CreateMatrix(int rowCount, int columsCount)
         {
             matrix[i, j] = rnd.Next(1, 11);
         }
-    }       
+    }
     return matrix;
 }
 
@@ -178,7 +178,6 @@ void ShowMatrix(int[,] matrix)
         {
             System.Console.Write($"{matrix[i, j]} ");   //интерполяция строк
         }
-        
         System.Console.WriteLine();
     }
 }
@@ -192,10 +191,30 @@ string GetLettersFromString(string s)
     string letters = "";
     foreach (char e in s)
     {
-        if(char.IsAsciiLetter(e) == true)
+        if (char.IsAsciiLetter(e) == true)
         {
             letters = letters + e;
         }
     }
     return letters;
 }
+
+//функция для формирования строки с обратным порядком слов исходной строки
+string FormStringInReverseOrder(string input)
+{
+    string[] words = input.Split(new char[] { ' ' });
+
+    string temp;
+
+    for (int i = 0; i < words.Length / 2; i++)
+    {
+        temp = words[i];
+        words[i] = words[words.Length - 1 - i];
+        words[words.Length - 1 - i] = temp;
+    }
+
+    string revers_text = string.Join(" ", words);
+
+    return revers_text;
+}
+

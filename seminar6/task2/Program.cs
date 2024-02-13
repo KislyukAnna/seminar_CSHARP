@@ -36,5 +36,3 @@ char[] char_array = GetCharArreyFromString(str);
 //PrintArray(char_array);
 //System.Console.WriteLine(char_array);
  Console.WriteLine("['"+string.Join("', '",char_array)+"']");
-
- System.Console.WriteLine("H".);
