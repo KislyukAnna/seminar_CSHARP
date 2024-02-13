@@ -41,6 +41,7 @@ void PrintAnswer(string input)
     }
 }
 
+Console.InputEncoding = System.Text.Encoding.GetEncoding("utf-16");
 System.Console.Write("Введи текст: ");
 string input = Console.ReadLine()!;
 PrintAnswer(input);
