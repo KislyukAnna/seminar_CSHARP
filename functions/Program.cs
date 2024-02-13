@@ -42,20 +42,42 @@ int[] GetArraySizeFromConsole()
     return array;
 }
 
+// Преобразование строки в числовой массив
+var[] array = input.Split(", ").Select(x => int.Parse(x)).ToArray();
+
 // вывод массива
-void PrintArray(int[] array)
+void PrintArray(int[] array) // элементы через запятую
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write(array[i]);
+        if (i<array.Length-1)
+        {
+            System.Console.WriteLine(", ");
+        }
+    }
+}
+
+// вывод массива
+void PrintArray(int[] array) // в квадратных скобках, элементы через запятую
 {
     Console.Write("[");
-    foreach (int number in array)
+    for (int i = 0; i < array.Length; i++)
     {
-        Console.Write(number + " ");
+        Console.Write(array[i]);
+        if (i<array.Length-1)
+        {
+            System.Console.WriteLine(", ");
+        }
     }
     Console.WriteLine("]");
 }
+
  // вывод массива строкой
  Console.WriteLine("["+string.Join(", ",array)+"]");
  Console.WriteLine("['"+string.Join("', '",char_array)+"']");
 
+ 
 
 //функция "зеркало" массива
 int[] ReverseArray(int[] array)
