@@ -7,31 +7,31 @@ string FormatString(string str)
     return format_string;
 }
 
-bool IsPolindrom(string input)
+bool IsPalindrom(string input)
 {
     string str = FormatString(input);
 
-    bool polindrom = false;
+    bool palindrom = false;
     int size = str.Length;
 
     for (int i = 0; i < size / 2; i++)
     {
         if (str[i] == str[size - 1 - i])
         {
-            polindrom = true;
+            palindrom = true;
         }
         else
         {
-            polindrom = false;
+            palindrom = false;
             break;
         }
     }
-    return polindrom;
+    return palindrom;
 }
 
 void PrintAnswer(string input)
 {
-    if (IsPolindrom(input))
+    if (IsPalindrom(input))
     {
         System.Console.WriteLine("Да");
     }
