@@ -3,22 +3,20 @@
 
 int FuncAkkerman(int m, int n)
 {
-    int a = 0;
-
     if (m == 0)
     {
-        a = n + 1;
+        return (n + 1);
     }
-    if (n == 0 && m > 0)
+    else if (n == 0 && m > 0)
     {
-        a = FuncAkkerman(m - 1, 1);
+        return FuncAkkerman(m - 1, 1);
     }
-    if (m > 0 & n > 0)
+    else 
     {
-        a = FuncAkkerman(m - 1, FuncAkkerman(m, n - 1));
+        return FuncAkkerman(m - 1, FuncAkkerman(m, n - 1));
     }
-    return a;
 }
+
 Console.Clear();
 Console.Write($"Введите неотрицательное число m: ");
 int m = Convert.ToInt32(Console.ReadLine()!);
