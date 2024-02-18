@@ -15,6 +15,7 @@ int FuncAkkerman(int m, int n)
     {
         return FuncAkkerman(m - 1, FuncAkkerman(m, n - 1));
     }
+    
 }
 
 Console.Clear();
@@ -23,4 +24,11 @@ int m = Convert.ToInt32(Console.ReadLine()!);
 Console.Write($"Введите неотрицательное число n: ");
 int n = Convert.ToInt32(Console.ReadLine()!);
 
-System.Console.WriteLine($"A( {m}, {n}) = {FuncAkkerman(m, n)}");
+if (m>=0 && n>=0)
+{
+    System.Console.WriteLine($"A( {m}, {n}) = {FuncAkkerman(m, n)}");
+}
+else
+{
+    System.Console.WriteLine($"Функция  A( {m}, {n}) не имеет смысла");
+}
