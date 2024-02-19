@@ -2,12 +2,12 @@
 // которая выведет все натуральные числа в промежутке от M до N. 
 // Использовать рекурсию, не использовать циклы.
 
-void PrintRange(int n, int m)
+void PrintRange(int m, int n)
 {
-    if (n <= m)
+    if (m <= n)
     {
-        Console.Write($"{n} ");
-        PrintRange(n + 1, m);
+        Console.Write($"{m} ");
+        PrintRange(m + 1, n);
     }
         return;
 }
