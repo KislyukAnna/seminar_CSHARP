@@ -218,3 +218,15 @@ string FormStringInReverseOrder(string input)
     return revers_text;
 }
 
+//объединение массивов в один
+T[] Concat<T>(params T[][] arrays)
+{
+    var result = new T[arrays.Sum(a => a.Length)];
+    int offset = 0;
+    foreach (T[] array in arras)
+    {
+        array.CopyTo(result,offset);
+        offset += array.Length;
+    }
+    return result;
+}

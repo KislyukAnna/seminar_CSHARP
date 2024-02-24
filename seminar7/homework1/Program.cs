@@ -12,4 +12,4 @@ void PrintRange(int m, int n)
         return;
 }
 
-PrintRange(10, 15);
+PrintRange(0, 15);

@@ -14,13 +14,25 @@ int[] GetArraySizeFromConsole(int size)
     }
     return array;
 }
-// функция печати элементов массива в обратном порядке
+
+// // функция печати элементов массива в обратном порядке
 void PrintReverseArrayElements(int[] array, int size)
 {
     if (size >= 1)
     {
         Console.Write($"{array[size-1]} ");
         PrintReverseArrayElements(array, size-1);
+    }
+    return;
+}
+
+// 2 вариант. функция печати элементов массива в обратном порядке
+void PrintLastElement(int[] array, int arg = 0)
+{
+    Console.Write($"{array[array.Length - 1 - arg]} ");
+    if (arg < array.Length - 1)
+    {
+        PrintLastElement(array, arg + 1);
     }
     return;
 }
@@ -32,3 +44,5 @@ int size = int.Parse(Console.ReadLine()!);
 int[] array = GetArraySizeFromConsole(size);
 Console.WriteLine("[" + string.Join(", ", array) + "]");
 PrintReverseArrayElements(array, size);
+Console.WriteLine();
+PrintLastElement(array);
